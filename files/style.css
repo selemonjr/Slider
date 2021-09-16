@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: sans-serif;
+}
+.title {
+    position: absolute;
+    top: 20%;
+    left: 550px;
+}
+.container {
+    width: 60%;
+    height: 50vh;
+    background:#808080;
+    position: absolute;
+    top: 30%;
+    left: 250px;
+    padding: 20px 0px 45px 0;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.item {
+    background: #ff0000;
+    margin: 10px;
+    width:330px;
+    height: 300px;
+    display: inline-block;
+}
+.next {
+    font-size: 45px;
+    position: absolute;
+    top: 55%;
+    left: 80%;
+}
+.prev {
+    font-size: 45px;
+    position: absolute;
+    top: 55%;
+    left: 190px;
+}

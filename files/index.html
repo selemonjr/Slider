@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/38437135aa.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Carousel Slider</h1>
+    <i class="fas fa-arrow-right next"></i>
+    <i class="fas fa-arrow-left prev"></i>
+    <div class="container">
+        <div class="slider">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $('.slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  nextArrow : $('.next'),
+  prevArrow : $('.prev'),
+});
+        });
+    </script>
+</body>
+</html>
